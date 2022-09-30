@@ -11,12 +11,15 @@ import java.lang.Math;
 
 public class Quadratic {
     public static void main(String[] args) {
-        System.out.println("Enter 'a*x*x + b*x + c' equation coefficients(a b c)  : ");
+
+        double root1, root2;
         Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter 'a*x*x + b*x + c' equation coefficients(a b c)  : ");
         float a = scanner.nextFloat();
         float b = scanner.nextFloat();
         float c = scanner.nextFloat();
-        double root1, root2;
+        
         float delta = b*b - 4*a*c ;
         if (delta > 0){
             root1 = (-b + Math.sqrt(delta)) / (2 * a);
