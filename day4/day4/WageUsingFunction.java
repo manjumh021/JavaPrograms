@@ -5,7 +5,7 @@
 
 
 import java.util.Random;
-public class WageForMonthUsingSwitchCase {
+public class WageUsingFunction {
     public static int getEmpHrs(int present){
         int empHrs;
         switch (present) {
