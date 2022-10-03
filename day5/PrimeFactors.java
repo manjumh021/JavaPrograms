@@ -8,7 +8,7 @@ d. O/P -> Print the prime factors of number N.
 
 import java.util.Scanner;
 
-public class HarmonicNumber {
+public class PrimeFactors {
     static int getUserInput(){
         System.out.println("Enter nth number : ");
         Scanner scanner = new Scanner(System.in);
