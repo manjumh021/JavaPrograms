@@ -5,34 +5,34 @@ public class Account {
     private int accountNumber;
     private int  deposit;
     public Account(String name,int accountNo){
-        this.accHolderName = name;
-        this.accountNumber = accountNo;
-        // this.deposit = dep;
+        accHolderName = name;
+        accountNumber = accountNo;
+        // deposit = dep;
     }
     public String getAccHolderName() {
-        return this.accHolderName;
+        return accHolderName;
     }
     public int getAccNumber() {
-        return this.accountNumber;
+        return accountNumber;
     }
     public int getDeposit() {
-        return this.deposit;
+        return deposit;
     }
     public void setDeposit(int leftAmt) {
-        this.deposit = leftAmt;
-        System.out.println("current:"+this.deposit);
+        deposit = deposit+ leftAmt;
+        System.out.println("current:"+deposit);
     }
     public int withdraw(int amount){
-        if((this.deposit-amount)>=0){
-            this.deposit = this.deposit - amount;
-            System.out.printf("%d amount withdrawed %d amount left.",amount,this.deposit);
-            System.out.println("current:"+this.deposit);
+        if((deposit-amount)>=0){
+            deposit = deposit - amount;
+            System.out.printf("%d amount withdrawed %d amount left.",amount,deposit);
+            System.out.println("current:"+deposit);
         }
         else{
             System.out.printf("%d amount exceeded than deposit",amount);
             System.out.println();
         }
-        return this.deposit;
+        return deposit;
     }
     
 }
